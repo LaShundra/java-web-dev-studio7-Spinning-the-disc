@@ -32,10 +32,9 @@ public abstract class BaseDisc {
     }
 
     public String discInfo(){
-        String output = String.format("\nDisk name: %s\nMax capacity: %d" +
+        return String.format("\nDisk name: %s\nMax capacity: %d" +
                 "\nSpace used: %d\n", name, storageCapacity,
                 capacityUsed, remainingStorageCapacity);
-        return output;
     }
 
     public String writeData(int dataSize){
